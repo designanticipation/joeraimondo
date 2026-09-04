@@ -1,262 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joe Raimondo | Digital Experiences, Spatial Computing, Interface Innovation</title>
-  <meta name="description" content="Product Manager, Researcher, and Inventor. Building Bloomberg for Scientists through spatial computing and embodied cognition.">
-  <style>
-    :root {
-      --text: #2d2d2d;
-      --text-light: #555;
-      --accent: #1a5f7a;
-      --border: #ccc;
-      --bg: #fafafa;
-    }
-    
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
-    html { font-size: 18px; }
-    
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      line-height: 1.7;
-      color: var(--text);
-      background: var(--bg);
-      padding: 2rem 1.5rem;
-    }
-    
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    
-    header {
-      text-align: center;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 2.5rem;
-    }
-    
-    h1 {
-      font-size: 2.2rem;
-      font-weight: normal;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-    }
-    
-    .tagline {
-      font-style: italic;
-      color: var(--text-light);
-      margin-bottom: 1rem;
-    }
-    
-    .contact {
-      font-size: 0.9rem;
-      color: var(--text-light);
-    }
-    
-    .contact a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    
-    .contact a:hover { text-decoration: underline; }
-    
-    h2 {
-      font-size: 1.1rem;
-      font-weight: normal;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-light);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.5rem;
-      margin: 2.5rem 0 1.5rem;
-    }
-    
-    h3 {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin: 1.8rem 0 0.3rem;
-    }
-    
-    .meta {
-      font-size: 0.9rem;
-      color: var(--text-light);
-      margin-bottom: 0.8rem;
-    }
-    
-    p { margin-bottom: 1rem; }
-    
-    .highlight {
-      background: #f0f6f8;
-      padding: 1.5rem;
-      border-left: 3px solid var(--accent);
-      margin: 1.5rem 0;
-    }
-    
-    .highlight p:last-child { margin-bottom: 0; }
-    
-    em { font-style: italic; }
-    
-    .section-intro {
-      font-size: 1.05rem;
-    }
-    
-    .skills {
-      color: var(--text-light);
-      font-size: 0.95rem;
-    }
-    
-    .thought-item {
-      margin-bottom: 1.2rem;
-    }
-    
-    .thought-item strong {
-      color: var(--text);
-    }
-    
-    footer {
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--text-light);
-    }
-    
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    
-    @media (max-width: 600px) {
-      html { font-size: 16px; }
-      body { padding: 1.5rem 1rem; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joe Raimondo — Multi-Stakeholder Coordination, Industrial Systems, Digital Platforms</title>
+<meta name="description" content="Joe Raimondo works on the coordination problem: designing the methods and platforms that let industries, agencies, and communities decide together. Chief Innovation Officer, OnTrackNorthAmerica.">
+<link rel="canonical" href="https://joeraimondo.com/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Joe Raimondo">
+<meta property="og:description" content="Multi-stakeholder coordination, industrial systems, and the platforms that let organizations decide together.">
+<meta property="og:url" content="https://joeraimondo.com/">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#E8E7E1;
+  --panel:#DEDDD6;
+  --ink:#16243C;
+  --muted:#57607A;
+  --rule:#C4C2B8;
+  --accent:#A8631B;
+  --serif:"Newsreader",Georgia,serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.65;
+  font-weight:400;
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 28px 96px}
+
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---------- masthead ---------- */
+
+header.masthead{padding:88px 0 0}
+
+h1{
+  font-family:var(--serif);
+  font-weight:400;
+  font-size:clamp(2.6rem,7vw,3.9rem);
+  line-height:1;
+  letter-spacing:-0.02em;
+  margin:0 0 14px;
+}
+
+.role{color:var(--muted);font-size:0.94rem;line-height:1.5;margin:0 0 22px;max-width:34ch}
+
+.contact{list-style:none;display:flex;flex-wrap:wrap;gap:20px;padding:0;margin:0;font-size:0.9rem}
+
+/* ---------- hero statement ---------- */
+
+.statement{margin:64px 0 0;border-top:1px solid var(--rule);padding-top:40px}
+
+.statement p:first-child{
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(1.5rem,3.6vw,2.05rem);
+  line-height:1.32;
+  letter-spacing:-0.011em;
+  margin:0 0 26px;
+  max-width:24ch;
+}
+
+.statement p:first-child em{font-style:normal;border-bottom:2px solid var(--accent);padding-bottom:2px}
+
+.statement p{max-width:62ch;margin:0 0 18px}
+
+/* ---------- sections ---------- */
+
+section{margin-top:76px}
+
+h2{
+  font-family:var(--serif);
+  font-weight:400;
+  font-size:1.85rem;
+  line-height:1.15;
+  letter-spacing:-0.015em;
+  margin:0 0 30px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--rule);
+}
+
+h3{font-family:var(--sans);font-weight:600;font-size:1.06rem;line-height:1.35;margin:0 0 4px}
+
+p{max-width:64ch}
+
+.meta{color:var(--muted);font-size:0.86rem;line-height:1.5;margin:0 0 14px}
+
+/* ---------- the "Now" panel ---------- */
+
+.now{background:var(--panel);border-left:3px solid var(--accent);padding:34px 34px 28px;margin-bottom:20px}
+.now h3{font-size:1.2rem}
+.now p{max-width:58ch}
+.now p:last-child{margin-bottom:0}
+
+.doing{margin:22px 0 0;padding:0;list-style:none;max-width:58ch}
+.doing li{position:relative;padding-left:20px;margin-bottom:11px;font-size:0.96rem;line-height:1.55}
+.doing li:last-child{margin-bottom:0}
+.doing li::before{content:"";position:absolute;left:0;top:11px;width:9px;height:1px;background:var(--accent)}
+
+.forward{
+  font-family:var(--serif);
+  font-size:1.22rem;
+  line-height:1.4;
+  margin:0;
+  padding:22px 0 0;
+  border-top:1px solid var(--rule);
+  max-width:44ch;
+}
+
+/* ---------- timeline spine ---------- */
+
+.spine{border-left:1px solid var(--rule);padding-left:30px;margin-left:4px}
+
+.entry{position:relative;margin-bottom:42px}
+.entry:last-child{margin-bottom:0}
+.entry::before{content:"";position:absolute;left:-35px;top:11px;width:11px;height:1px;background:var(--accent)}
+.entry p{margin:0}
+
+.also{margin-top:34px;color:var(--muted);font-size:0.9rem}
+
+/* ---------- simple listings ---------- */
+
+.item{margin-bottom:26px}
+.item:last-child{margin-bottom:0}
+.item p{margin:0}
+
+/* ---------- unfinished copy, remove before publishing ---------- */
+
+mark.todo{
+  background:#F7E27A;
+  color:#3A2A00;
+  padding:1px 5px;
+  border-radius:2px;
+  font-size:0.92em;
+  box-decoration-break:clone;
+  -webkit-box-decoration-break:clone;
+}
+
+/* ---------- footer ---------- */
+
+footer{
+  margin-top:88px;
+  padding-top:26px;
+  border-top:1px solid var(--rule);
+  color:var(--muted);
+  font-size:0.86rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+@media (max-width:560px){
+  body{font-size:16px}
+  header.masthead{padding-top:56px}
+  .wrap{padding:0 20px 64px}
+  .now{padding:26px 22px 22px}
+  section{margin-top:60px}
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Joe Raimondo</h1>
-      <p class="tagline">Digital Experiences &amp; Platforms · Spatial Computing · Interface Innovation</p>
-      <p class="contact">
-        <a href="mailto:joe.raimondo@gmail.com">joe.raimondo@gmail.com</a> · 
-        <a href="https://linkedin.com/in/joeraimondo">LinkedIn</a> · 
-        <a href="https://polyopticon.io">polyopticon.io</a>
-      </p>
-    </header>
+<div class="wrap">
 
-    <section>
-      <p class="section-intro">I make complex digital environments navigable—reducing cognitive overload, decision thrash, and coordination friction. Over three decades, I've moved between enterprise product management, academic teaching, startup leadership, and independent research, always pursuing a single question: <em>how can technology serve as seed and catalyst for advancing the human program?</em></p>
-      
-      <p>This inquiry began with phenomenology around technology use—observing the "wizardry phenomenon" where expertise transforms perception—and evolved through deep engagement with embodied cognition, design philosophy, and collaborative systems.</p>
-      
-      <p>My current work integrates these threads. At Comcast, I lead enterprise architecture producing $50M in annual savings and a 95-point NPS transformation. Through Design Anticipation LLC, I develop the Polyopticon—a spatial computing device positioning physical topology as a computational dimension, building toward "Bloomberg for Scientists." The patent portfolio now includes US 12,197,471 and pending applications.</p>
-    </section>
+<header class="masthead">
+  <h1>Joe Raimondo</h1>
+  <p class="role">Multi-stakeholder coordination, industrial systems, and digital platforms</p>
+  <ul class="contact">
+    <li><a href="mailto:joe.raimondo@gmail.com">joe.raimondo@gmail.com</a></li>
+    <li><a href="https://linkedin.com/in/joeraimondo">LinkedIn</a></li>
+    <li><a href="https://polyopticon.io">polyopticon.io</a></li>
+  </ul>
+</header>
 
-    <h2>Origins: The Wizardry Phenomenon</h2>
-    <section>
-      <p>In my junior year at Penn, my boss at the Wharton A/V Center asked me to help carry something inside from his car. It was a version 1.0 IBM PC. He said, "set it up and see what it can do." That was a foundational event. We became the first generation of the "PC literate"—distinct from what existed before, when they were still teaching computer science on time-share mainframes.</p>
-      
-      <p>After graduation, working desk-side tech at Wharton, I observed what I came to call the "wizardry phenomenon." Someone would be stuck for hours with a problem; I would walk up and solve it with two keystrokes. They looked at me as if I was wearing a pointy hat with quarter moons on it. That introduced me to the phenomenology around technology use—and my first identification as entrepreneur and consultant, two defining themes in my professional development.</p>
-    </section>
+<div class="statement">
+  <p>Most transformation efforts fail for the same reason: organizations build more capacity to act without building the capacity to <em>decide together</em>.</p>
+  <p>I work on the second problem — designing the conversations, methods, and platforms that let industries, agencies, and communities think and commit as one system instead of a pile of competing agendas.</p>
+  <p>For three decades that has meant enterprise product work at scale, founding and running companies, and inventing tools for collaborative sense-making. Today it means putting all of it to work on collaboration as infrastructure.</p>
+</div>
 
-    <h2>Patents &amp; Intellectual Property</h2>
-    <section>
-      <h3>US Patent 12,197,471</h3>
-      <p class="meta">"Systems and Methods for Using Motion to Manipulate Timeline Objects" · 2024</p>
-      <p>Novel interface paradigm for temporal data manipulation through embodied interaction—enabling intuitive timeline navigation and information retrieval through physical gestures and spatial computing principles.</p>
-      
-      <h3>Polyopticon 4D Computing Device</h3>
-      <p class="meta">Patent Pending</p>
-      <p>Breakthrough spatial computing interface based on spherical topology with 32-face geodesic structure. Research integrates embodied cognition theory, enactive perception, and collaborative workspace design.</p>
-    </section>
+<!-- ================= NOW ================= -->
+<section id="now">
+  <h2>Now</h2>
 
-    <h2>Professional Narrative</h2>
-    
-    <section>
-      <h3>Enterprise Scale: Comcast Corporation</h3>
-      <p class="meta">Senior Product Manager · January 2016–Present · Greater Philadelphia</p>
-      <p>The signal experience Comcast has afforded is the capacity to operate with rigor, at scale. We transformed capabilities enabling customers to work with the company. We delivered features that produced phenomenal transformation in perceived value—a 95-point shift in NPS over a two-year period. This outcome produced $50 million in cost savings by shifting acquisition and support into a broad digital omnichannel. During the COVID-19 pandemic, we transformed legacy ecommerce systems, outfitting them to business and customer interaction requirements that had never been anticipated.</p>
-      
-      <h3>Long-Horizon Research: Design Anticipation LLC</h3>
-      <p class="meta">Principal Investigator · January 2019–Present · Haddonfield, NJ</p>
-      <p>Founded research company focused on spatial computing and interface innovation with over 20 years of foundational work initially encouraged by Dr. Norman Badler at University of Pennsylvania. The original concept for the Polyopticon occurred while completing my MSE at Penn—studying 3D interfaces with Norm, who told me he thought I had something. The foundation came from discussing means to present results from Gap International's breakthrough performance diagnostic, where I worked with linguists and statisticians to develop platforms tracing multi-dimensions of human activity. The question emerged: <em>how do we envision and interact with data sets at multiple levels of organizational performance, spanning individual, team, leader, and enterprise?</em></p>
-      
-      <h3>Academic Practice: Columbia University</h3>
-      <p class="meta">Adjunct Faculty, School of Professional Studies · April 2014–July 2021</p>
-      <p>Spent years as adjunct faculty guiding master's programs in Information and Knowledge Strategy and Applied Analytics. This was my first experience in academics as a practitioner, providing insight into novel concepts and aiding in developing broader context for organizational strategy—how data was being applied in the new world of graph databases and emerging neural network applications.</p>
-      
-      <h3>Startup Leadership: E-Nact Solutions LLC</h3>
-      <p class="meta">Chief Executive Officer · September 2013–January 2016</p>
-      <p>Built Intellisynthesis™, a unique collaborative platform for multistakeholder collaboration and negotiation. Leveraged Google text analytics API to develop innovative mapping structures for managing online stakeholder engagements. Generated voluminous thought work, SBIR funding applications, and research into network, supply chain, and how to convene and collaborate.</p>
-      
-      <h3>Transformational Technology: Gap International</h3>
-      <p class="meta">IT Manager / Digital Architect · February 1999–August 2005</p>
-      <p>From KPMG, I went to Gap International, a boutique human performance firm. My role was as the first information technology professional in a rapidly expanding firm. One of my signal accomplishments was to digitize what had been a prominently face-to-face methodology—I invented means to draw from the tacit to the explicit. This was a major shift, and I did the spadework for how to use digital means in transformational consulting. Developed knowledge management strategy and SharePoint portal platform that reduced training cycles by 50%.</p>
-      
-      <h3>Digital Emergence: KPMG Consulting</h3>
-      <p class="meta">Knowledge Manager · December 1994–January 1999</p>
-      <p>Started working at KPMG at a formative time in the development of the digital ecosystem. Working for the Firm's Chief Knowledge Officer, led definition and implementation for the firm's first communities of practice sharing portal. We were using VR goggles in 1995. I interviewed David Chaum about Digicash in 1996 and wrote the firm's LabNote about it. Architected firm-wide consultant toolkit, developing the first browser-based consulting methodology platform.</p>
-      
-      <h3>Research Foundations: Datapro Research</h3>
-      <p class="meta">Associate Editor · February 1988–July 1992</p>
-      <p>Perhaps the most conventionally successful part of my career—promoted twice in four years. Assumed the Associate Editor role guiding editorial calendar and development for <em>Datapro Reports on Management of Personal Computers</em> and <em>Datapro Reports on Management of Office Automation</em>. This allowed me to immerse myself in the academic study of this emerging paradigm. During that time I initiated the firm's first hybrid of groupware—it was then that I became familiar with computer-supported cooperative work, just as it emerged as an academic discipline. It was also then that I read Duncan Sutherland Jr., sought him out, and made him my forever mentor in the area of <em>the design of design</em>.</p>
-    </section>
+  <div class="now">
+    <h3>OnTrackNorthAmerica / OnTrackWorld</h3>
+    <p class="meta">Chief Innovation Officer &nbsp;·&nbsp; July 2015–Present &nbsp;·&nbsp; Philadelphia, PA</p>
 
-    <h2>Intellectual Foundations</h2>
-    <section>
-      <p>Two books from the late 1980s had major impact. <em>In the Age of the Smart Machine</em> by Shoshana Zuboff was a deep meditation about how digital means would impact work and alter humanity's path. <em>Understanding Computers and Cognition: A New Foundation for Design</em> by Terry Winograd and Fernando Flores demonstrated what the necessary trajectory for humans using technology needed to be. That was a major critique against the AI program of the '80s—neural nets and expert systems. They've been around a long time, and that's frequently overlooked. The synthesis resulting from that thinking drove me forward into exploring how technology could be a seed and catalyst for advancing the human program.</p>
-    </section>
+    <p>OnTrackNorthAmerica is a 501(c)(3) action think tank working to redesign how North America plans, capitalizes, and builds its industrial and freight systems — expanding rail utilization, integrating freight with land use, and replacing siloed planning with coordinated, whole-system decision-making. OTNA has held a thirty-year pledge of impartiality: it takes no sponsorship that would prioritize one party's agenda over shared interests, which is what makes genuinely level-playing-field dialogue possible.</p>
 
-    <h2>Selected Thought Leadership</h2>
-    <section>
-      <div class="thought-item">
-        <strong>Sceenius / Feynman Airstream:</strong> Engaged with John Kellden, Joachim Stroh, and Ron Scroggin to generate the Feynman Airstream. We were sherpas at the forefront of transforming possible infrastructure for group activity, generating a new modality of personal and group transformation. We generated probabilistic journeys and generative ontologies—it produced the best writing of my lifetime.
-      </div>
-      
-      <div class="thought-item">
-        <strong>Institute for Social Network Literacy:</strong> Working with Doug Breitbart through Ontologique, connected with Howard Rheingold, with whom we developed the Institute for Social Network Literacy as follow-on to Howard's influential <em>Net Smart</em>.
-      </div>
-      
-      <div class="thought-item">
-        <strong>"Social Being: An Emergent Theory of Organizational Performance":</strong> A novel and influential thought piece emerging from work with Doug Breitbart at Ontologique, a thought leadership firm focused on meaning-making at the then-nascent semantic web.
-      </div>
-      
-      <div class="thought-item">
-        <strong>Encapsulations: Design Points for Global Access (1993–94):</strong> Technology analysis newsletter examining emerging digital infrastructure through phenomenological philosophy, complexity science, and public interest advocacy. Introduced "knowledge work" framework; coined "micro-enterprise executive" anticipating the gig economy by two decades.
-      </div>
-    </section>
+    <p>The organization's core method is IntelliSynthesis® — a structured approach to collaborative problem-solving that gets impacted and influential parties thinking and acting together fast, so that posturing and narrow vested interests fall away rather than dominate. It runs through IntelliConference events, facilitated stakeholder dialogues, and Transportation Action Planning engagements with governments, railroads, shippers, and communities.</p>
 
-    <h2>Education</h2>
-    <section>
-      <p><strong>University of Pennsylvania, School of Engineering and Applied Science</strong><br>
-      Master of Science in Engineering, Management of Technology · 2001–2005</p>
-      
-      <p><strong>University of Pennsylvania, School of Arts and Sciences</strong><br>
-      Bachelor of Arts, Economics · 1979–1983</p>
-    </section>
-
-    <h2>Research Interests</h2>
-    <section>
-      <p class="skills">Human-Computer Interaction · Spatial Computing · Embodied Cognition · Knowledge Management · Information Architecture · Collaborative Systems · Interface Design · Organizational Performance · Digital Wayfinding · Decision Support Systems · Enactive Perception · Computer-Supported Cooperative Work</p>
-    </section>
-
-    <h2>Research Statement</h2>
-    <section>
-      <div class="highlight">
-        <p>My research integrates human-computer interaction, embodied cognition theory, and information science to address fundamental questions about how physical topology and haptic interaction can transform information organization and collaborative work. With over 25 years developing digital systems for Fortune 50 companies, teaching at Columbia University, and conducting independent research initially encouraged by Dr. Norman Badler at the University of Pennsylvania, I bring both theoretical depth and practical experience to investigating spatial computing as a computational paradigm.</p>
-        <p>My current work on the Polyopticon device represents a long-horizon research program positioning embodied interaction not as a peripheral interface consideration but as a fundamental computational dimension. I am particularly interested in exploring how these principles can advance collaborative scientific work and reduce cognitive friction in complex information environments.</p>
-      </div>
-    </section>
-
-    <footer>
-      <p>© 2025 Joe Raimondo · <a href="mailto:joe.raimondo@gmail.com">Contact</a> · <a href="https://polyopticon.io">Polyopticon Project</a></p>
-    </footer>
+    <ul class="doing">
+      <li>Building the platform and formalizing the method, expanding digital infrastructure, and hardening the product story for IntelliConference® and IntelliSynthesis®.</li>
+      <li>Drove response to the US Department of Transportation's Great Corridors of Commerce RFI.</li>
+      <li>Built <mark class="todo">unfinished in your doc — finish this line or delete it</mark></li>
+      <li>Built firm ontology and agent fabric using MCP.</li>
+      <li>Wrote a working manuscript of the Principal's field work. Developing self-publishing strategy and execution.</li>
+    </ul>
   </div>
+
+  <p class="forward">Developing OnTrackWorld — knitting together the future.</p>
+</section>
+
+<!-- ================= TRACK RECORD ================= -->
+<section id="track-record">
+  <h2>Track record</h2>
+
+  <div class="spine">
+
+    <div class="entry">
+      <h3>Comcast Corporation</h3>
+      <p class="meta">Senior Product Manager &nbsp;·&nbsp; January 2016–July 2026</p>
+      <p>Enterprise product and architecture at national scale. Led work that shifted acquisition and support into a digital omnichannel — a 95-point NPS improvement over two years and $50M in annual cost savings. Through the pandemic, rebuilt legacy ecommerce systems to handle interaction patterns no one had planned for. The lasting lesson: rigor and scale are learnable, and most large organizations have neither where it counts.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Design Anticipation LLC</h3>
+      <p class="meta">Founder &nbsp;·&nbsp; January 2019–Present &nbsp;·&nbsp; Haddonfield, NJ</p>
+      <p>Independent invention practice behind the Polyopticon and US Patent 12,197,471.</p>
+    </div>
+
+    <div class="entry">
+      <h3>E-Nact Solutions LLC</h3>
+      <p class="meta">Chief Executive Officer &nbsp;·&nbsp; September 2013–January 2016</p>
+      <p>Constructed IntelliSynthesis®, a platform for multistakeholder collaboration and negotiation — mapping structures for convening online stakeholder engagements, built on early text-analytics APIs. The direct antecedent of the method now in the field at OnTrackNorthAmerica.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Gap International</h3>
+      <p class="meta">IT Manager / Digital Architect &nbsp;·&nbsp; February 1999–August 2005</p>
+      <p>First technology professional in a fast-growing human performance firm. Digitized a methodology that had been almost entirely face-to-face — building the means to move tacit practice into explicit, transferable form. Knowledge management strategy and portal platform cut training cycles by 50%. Worked alongside linguists and statisticians on diagnostics tracing individual, team, leader, and enterprise performance.</p>
+    </div>
+
+    <div class="entry">
+      <h3>KPMG Consulting</h3>
+      <p class="meta">Knowledge Manager &nbsp;·&nbsp; December 1994–January 1999</p>
+      <p>Working for the firm's Chief Knowledge Officer, defined and shipped its first communities-of-practice sharing portal and the first browser-based consulting methodology platform. We were running VR goggles in 1995. I interviewed David Chaum about DigiCash in 1996 and wrote the firm's brief on it.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Datapro Research</h3>
+      <p class="meta">Associate Editor &nbsp;·&nbsp; February 1988–July 1992</p>
+      <p>Guided editorial direction for <em>Datapro Reports on Management of Personal Computers</em> and <em>Management of Office Automation</em>. Launched the firm's first groupware coverage — early enough to watch computer-supported cooperative work emerge as a field, and to find Duncan Sutherland Jr., who became a lifelong mentor.</p>
+    </div>
+
+  </div>
+
+  <p class="also">Also: adjunct faculty, Columbia University School of Professional Studies (2014–2021), teaching in the master's programs in Information &amp; Knowledge Strategy and Applied Analytics.</p>
+</section>
+
+<!-- ================= INVENTION ================= -->
+<section id="invention">
+  <h2>Invention</h2>
+
+  <div class="item">
+    <h3>US Patent 12,197,471</h3>
+    <p class="meta">Systems and Methods for Using Motion to Manipulate Timeline Objects &nbsp;·&nbsp; 2024</p>
+    <p>An interface for navigating and retrieving temporal data through physical gesture rather than pointer and menu.</p>
+  </div>
+
+  <div class="item">
+    <h3>Polyopticon</h3>
+    <p class="meta">Patent pending</p>
+    <p>A spatial computing device built on a 32-face geodesic structure, treating physical topology as a working dimension of the interface. Aimed at people who have to hold too many moving variables at once. More at <a href="https://polyopticon.io">polyopticon.io</a>.</p>
+  </div>
+</section>
+
+<!-- ================= SELECTED WORK ================= -->
+<section id="writing">
+  <h2>Selected work and writing</h2>
+
+  <div class="item">
+    <h3>Sceenius / Feynman Airstream</h3>
+    <p>With John Kellden, Joachim Stroh, and Ron Scroggin, developing new infrastructure for group thinking and generative ontologies.</p>
+  </div>
+
+  <div class="item">
+    <h3>Institute for Social Network Literacy</h3>
+    <p>Founded with Doug Breitbart and Howard Rheingold as a follow-on to Rheingold's <em>Net Smart</em>.</p>
+  </div>
+
+  <div class="item">
+    <h3>Social Being: An Emergent Theory of Organizational Performance</h3>
+    <p>White paper on the capacity of organizations to make sense, out of work with Doug Breitbart at Ontologique.</p>
+  </div>
+
+  <div class="item">
+    <h3>Encapsulations: Design Points for Global Access</h3>
+    <p class="meta">1993–94</p>
+    <p>Newsletter on emerging digital infrastructure. Introduced a "knowledge work" framework and coined "micro-enterprise executive," anticipating the gig economy by two decades.</p>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+  <h2>Education</h2>
+  <p>University of Pennsylvania — MSE, Management of Technology (2005); BA, Economics (1983).</p>
+</section>
+
+<footer>
+  <span>© 2026 Joe Raimondo</span>
+  <a href="mailto:joe.raimondo@gmail.com">Contact</a>
+  <a href="https://polyopticon.io">Polyopticon</a>
+</footer>
+
+</div>
 </body>
 </html>
